@@ -7,7 +7,7 @@ const DEVTOOLS = '__REDUX_DEVTOOLS_EXTENSION_COMPOSE__',
 
 export default function configureStore(initialState) {
 	const enhancers = composeEnhancers(
-		applyMiddleware(logger)
+		// applyMiddleware(logger)
 	);
 
 	return initialState ? createStore(reducers, initialState, enhancers)

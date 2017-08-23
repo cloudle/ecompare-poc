@@ -4,6 +4,7 @@ import { TouchableOpacity, View, Image, Text, StyleSheet, } from 'react-native';
 import { Button, Input } from 'react-universal-ui';
 import Link from 'next/link';
 
+import Layout from '../components/layout';
 import store from '../store';
 import * as appActions from '../store/action/app';
 
@@ -22,15 +23,10 @@ export default class IndexPage extends Component {
 	props: Props;
 
 	render() {
-		return <View style={styles.container}>
-			<Text>Hello world! {this.props.counter}</Text>
-			<Button
-				wrapperStyle={{ marginTop: 5, marginBottom: 10, }}
-				title="Increase"
-				onPress={() => this.props.dispatch(appActions.increaseCounter())}/>
-
-			<Link href="counter"><a>Goto Counter Page</a></Link>
-		</View>;
+		return <Layout>
+			<Text>Hi</Text>
+			<Link href="counter"><a>Goto Counter Page!</a></Link>
+		</Layout>;
 	}
 }
 

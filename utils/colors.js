@@ -2,7 +2,7 @@ import tinyColorImport from 'tinycolor2';
 
 export const tinyColor = tinyColorImport;
 
-const main = '#3c79b6';
+const main = '#183544';
 
 const secondary = '#fb641b';
 const darkBackground = '#282C34';
